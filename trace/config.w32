@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("trace", "for trace support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("trace", "enable trace support", "no");
+
+if (PHP_TRACE != "no") {
+	EXTENSION("trace", "trace.c");
+}
+
